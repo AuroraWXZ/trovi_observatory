@@ -1,1 +1,49 @@
-
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "actionApplication": [
+                {
+                    "@id": "#ChameleonJupyterLab"
+                }
+            ],
+            "author": [
+                {
+                    "@id": "#author_0"
+                }
+            ],
+            "datePublished": "2026-02-08T06:38:20+00:00",
+            "description": "This artifact reproduces the Row Order Insignificance property from the Observatory paper (VLDB 2024), which demonstrates that BERT-based table embeddings are robust to row shuffling.\n\nDuring reproduction, we identified and fixed an implementation issue in the original code that prevented complete processing of the dataset. With the corrected code, we successfully reproduced the experiments and confirmed the paper's conclusion that BERT embeddings exhibit Row Order Insignificance.\n\nThis Jupyter notebook provides complete end-to-end reproduction on Chameleon Cloud GPU instances (RTX 6000), including infrastructure provisioning, environment setup, data acquisition from WikiTables dataset, running experiments with both original and corrected implementations, and statistical analysis. The workflow is fully documented and takes approximately 30 to 45 minutes to execute.\n\nThe artifact demonstrates transparent reproducibility research by documenting the complete reproduction process, including challenges encountered and solutions applied. All code, data processing steps, and analysis scripts are included, enabling others to verify our findings and build upon this work.",
+            "disambiguatingDescription": "Reproduction of Row Order Insignificance property from Observatory (VLDB 2024) with discovery and fix of a critical bug in the original implementation affecting tables with more columns than rows.",
+            "keywords": "reproducible research",
+            "name": "Observatory Row Order Insignificance: Reproduction and Bug Discovery"
+        },
+        {
+            "@id": "trovi.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "#author_0",
+            "@type": "Person",
+            "affiliation": "Purdue University",
+            "email": "wang6171@purdue.edu",
+            "name": "Xinzhi Wang"
+        },
+        {
+            "@id": "#ChameleonJupyterLab",
+            "@type": "SoftwareApplication",
+            "name": "Chameleon JupyterLab",
+            "trovi_arguments": "{}",
+            "trovi_type": "jupyterhub",
+            "url": "https://jupyter.chameleoncloud.org/"
+        }
+    ]
+}
