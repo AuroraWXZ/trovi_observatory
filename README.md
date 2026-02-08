@@ -1,5 +1,8 @@
 # Observatory Reproduction on Chameleon Trovi
 
+The version of the artifact is pinned to a specific commit, which may differ from the latest version in the repository.
+
+
 ## Overview
 This repository contains the artifact for the **Observatory Trovi** project on Chameleon Cloud.  
 It demonstrates how to configure secure access to a Chameleon compute instance, connect to the instance remotely, and run a Jupyter-based workflow for Observatory-style experiments.
